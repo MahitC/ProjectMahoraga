@@ -5,11 +5,11 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 60%;
   }
 #info{
     position: absolute;
     color: goldenrod;
     top: 30%;
-    left: 30%;
+    left: 25%;
 }
