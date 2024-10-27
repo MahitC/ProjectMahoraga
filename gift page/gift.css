@@ -2,10 +2,13 @@ body{
     background-color: rgb(232, 232, 232);
 }
 #info{
-    display: grid;
+    height: 60%;
+    display: none;
     grid-template: '1fr 1fr/2fr 2fr';
     position:absolute;
     justify-items: center;
+    justify-content: center;
+    justify-self: center;
 }
 #budget{
     background-image: linear-gradient(125deg, gold, yellow);
@@ -19,7 +22,6 @@ body{
     grid-template: '1fr 1fr/ 2fr';
     grid-area: 1/2/3/3;
     width: 50%;
-    height: 200%;
     justify-items: center;
 }
 #type{
@@ -37,7 +39,7 @@ body{
     background-color: inherit;
 }
 #card{
-    display: none;
+    display: grid;
 }
 #cardImg{
     position: absolute;
@@ -60,4 +62,12 @@ body{
     border: none;
     cursor: pointer;
     background-color: inherit;
+}
+top{
+    font-size: 500%;
+    text-align: center;
+    color: purple;
+}
+h1{
+    font-size: 200%;
 }
