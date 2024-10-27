@@ -10,10 +10,11 @@
 <body>
     <div id="info">
         <div id="budget">
-        <h1>Usual Budget: </h1>
+            <h1>Usual Budget: </h1>
             <h1>$$$</h1>
             <h2>20-50USD</h2>
         </div>
+        <button id="toCard" onclick="showCard()"></button>
         <div id="item">
             <div id="type">
                 <h1>Usual Type: </h1>
@@ -22,14 +23,16 @@
             </div>
             <img id="infoImg" src="chocolate.jpg">
         </div>
-        <button id="toCard" onclick="showCard()"></button>
     </div>
     <div id="card">
         <img id="cardImg" src="chocolate.jpg">
         <div id="title">
-            <h2>Present</h2>
-            <h2>$$$</h2>
+            <h1>Present</h1>
+            <h1>$$$</h1>
         </div>
+        <button id="toInfo" onclick="showInfo()">
+            <img src="coin.png">
+        </button>
         <button id="toInfo" onclick="showInfo()"></button>
     </div>
 </body>
