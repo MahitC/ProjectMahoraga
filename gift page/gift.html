@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="gift.css">
-  </head>
+    <script src="gift.js" type="module" ></script>
+</head>
 
-  <body>
-    <img src="chocolate.jpg">
+<body>
     <div id="info">
-      <h1>Chocolate</h3>
-      <h2>$$</h4>
+        <div id="budget">
+        <h1>Usual Budget: </h1>
+            <h1>$$$</h1>
+            <h2>20-50USD</h2>
+        </div>
+        <div id="item">
+            <div id="type">
+                <h1>Usual Type: </h1>
+                <h1>Tech</h1>
+                <h2>laptop</h2>
+            </div>
+            <img id="infoImg" src="chocolate.jpg">
+        </div>
+        <button id="toCard" onclick="showCard()"></button>
     </div>
-    
-  </body>
+    <div id="card">
+        <img id="cardImg" src="chocolate.jpg">
+        <div id="title">
+            <h2>Present</h2>
+            <h2>$$$</h2>
+        </div>
+        <button id="toInfo" onclick="showInfo()"></button>
+    </div>
+</body>
 </html>
