@@ -2,44 +2,62 @@ body{
     background-color: rgb(232, 232, 232);
 }
 #info{
-    display: none;
+    display: grid;
+    grid-template: '1fr 1fr/2fr 2fr';
+    position:absolute;
+    justify-items: center;
 }
 #budget{
     background-image: linear-gradient(125deg, gold, yellow);
     grid-area: 1/1/2/2;
     color: orange;
+    width: 100%;
 }
 #item{
-    position: absolute;
+    background-image: linear-gradient(125deg, gold, yellow);
     display: grid;
     grid-template: '1fr 1fr/ 2fr';
+    grid-area: 1/2/3/3;
+    width: 50%;
+    height: 200%;
+    justify-items: center;
 }
 #type{
-    background-image: linear-gradient(125deg, gold, yellow);
-    grid-area: 1/2/2/3;
+    grid-area: 1/1/2/2;
     color: orange;
 }
 #infoImg{
-    width:60%
+    grid-area: 2/1/3/2;
+    width: 50%;
 }
 #toCard{
-    width: 20%;
+    grid-area: 2/1/3/2;
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
 }
 #card{
-    display: grid;
+    display: none;
 }
 #cardImg{
     position: absolute;
     top: 10%;
-    left: 10%
+    left: 10%;
+    width: 70%;
 }
 #title{
     position: absolute;
     color: orange;
     top: 20%;
-    left: 30%
+    left: 30%;
+    font-size: 300%;
 }
 #toInfo{
     position: absolute;
     top: 90%;
+    width: 40%;
+    height: 30%;
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
 }
