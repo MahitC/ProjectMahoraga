@@ -1,15 +1,45 @@
 body{
-    background-color: blanchedalmond;
+    background-color: rgb(232, 232, 232);
 }
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-  }
 #info{
+    display: none;
+}
+#budget{
+    background-image: linear-gradient(125deg, gold, yellow);
+    grid-area: 1/1/2/2;
+    color: orange;
+}
+#item{
     position: absolute;
-    color: goldenrod;
-    top: 30%;
-    left: 25%;
+    display: grid;
+    grid-template: '1fr 1fr/ 2fr';
+}
+#type{
+    background-image: linear-gradient(125deg, gold, yellow);
+    grid-area: 1/2/2/3;
+    color: orange;
+}
+#infoImg{
+    width:60%
+}
+#toCard{
+    width: 20%;
+}
+#card{
+    display: grid;
+}
+#cardImg{
+    position: absolute;
+    top: 10%;
+    left: 10%
+}
+#title{
+    position: absolute;
+    color: orange;
+    top: 20%;
+    left: 30%
+}
+#toInfo{
+    position: absolute;
+    top: 90%;
 }
